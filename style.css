@@ -1,0 +1,198 @@
+/*--- Google Font ---*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/*--- Universal resetter ---*/
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--- Color Variables ---*/
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --neutral-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --font-family: 'Outfit', sans-serif;
+  --font-weight-regular: 300;
+  --font-weight-bold: 400;
+  --font-weight-extra-bold: 600;
+}
+
+.main_container {
+  width: 100%;
+  height: 100vh;
+  background: var(--neutral-very-dark-blue-main-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+}
+
+.main_container .card {
+  background: var(--neutral-very-dark-blue-card-bg);
+  width: 360px;
+  height: 590px;
+  border-radius: 15px;
+  position: relative;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.main_container .card .card_image {
+  width: 315px;
+  position: relative;
+  top: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main_container .card .card_hover_image {
+  width: auto;
+  position: absolute;
+  top: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  padding: 132.9px;
+}
+
+.main_container .card .card_hover_image:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 247, 0.5)));
+  background: linear-gradient(rgba(0, 255, 247, 0.5));
+}
+
+.main_container .card .card_header {
+  position: relative;
+  font-family: var(--font-family);
+  color: var(--neutral-white);
+  width: 100%;
+  padding: 0 25px;
+  top: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main_container .card .card_header:hover {
+  color: var(--primary-cyan);
+}
+
+.main_container .card .card_para {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--primary-soft-blue);
+  padding: 0 25px;
+  position: relative;
+  top: 55px;
+}
+
+.main_container .card .bit_offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 75px;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  border-bottom: 2px solid var(--neutral-very-dark-blue-line);
+}
+
+.main_container .card .bit_offer .eth {
+  color: var(--primary-cyan);
+  font-weight: 600;
+  font-family: var(--font-family);
+  position: relative;
+}
+
+.main_container .card .bit_offer .eth .ethereum {
+  position: relative;
+  top: 4px;
+  padding-right: 2px;
+}
+
+.main_container .card .bit_offer .time {
+  font-family: var(--font-family);
+  color: var(--primary-soft-blue);
+}
+
+.main_container .card .bit_offer .time .clock {
+  position: relative;
+  top: 2px;
+  padding-right: 2px;
+}
+
+.main_container .card .card_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 85px;
+  width: 85%;
+}
+
+.main_container .card .card_footer .avatar {
+  width: 35px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+}
+
+.main_container .card .card_footer .avatar_text {
+  position: relative;
+  top: 12px;
+  padding-left: 17px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  color: var(--primary-soft-blue);
+}
+
+.main_container .card .card_footer .avatar_text span {
+  color: var(--neutral-white);
+  cursor: pointer;
+}
+
+.main_container .card .card_footer .avatar_text span:hover {
+  color: var(--primary-cyan);
+}
+
+/*--- Attribution stylesheet ---*/
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
